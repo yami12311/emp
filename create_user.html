@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="create_user.css">
+<div class="user-creation-form">
+    <h2>Create New User</h2>
+    <form action="create_user.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" id="confirm_password" required>
+        
+        <label for="role">Role:</label>
+        <select name="role" id="role" required>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+        
+        <button type="submit">Create User</button>
+    </form>
+</div>
